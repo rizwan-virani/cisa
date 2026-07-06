@@ -1,0 +1,19 @@
+{
+  "name": "ISACA CISA Study Platform",
+  "short_name": "CISA",
+  "description": "Free, open-source certification exam prep — part of The Certification Launchpad.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0b1016",
+  "theme_color": "#34d5e6",
+  "icons": [
+    {
+      "src": "assets/img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

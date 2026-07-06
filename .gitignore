@@ -1,0 +1,16 @@
+# Local tooling / editor config
+.claude/
+tools/
+
+# Source exam reference material (not part of the shipped site)
+*.pdf
+
+# Node tooling (none needed at runtime — the shipped site is static)
+node_modules/
+npm-debug.log*
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/

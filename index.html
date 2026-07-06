@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Apply saved theme before first paint to avoid a flash. -->
+<script>(function(){try{var t=localStorage.getItem('cisa.theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();</script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="An open-source ISACA CISA study platform: in-depth coverage of all five domains, 500 practice questions, audit-decision simulators, hands-on labs, and a full timed mock exam. By Professor Rizwan Virani." />
+<title>CISA :: ISACA CISA Study Platform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css?v=2" />
+<link rel="manifest" href="manifest.webmanifest" />
+<meta name="theme-color" content="#34d5e6" />
+<link rel="apple-touch-icon" href="assets/img/icon.svg" />
+</head>
+<body>
+<div class="shell">
+
+  <!-- ===== Top bar (brand doubles as the Home link) ===== -->
+  <header class="topbar">
+    <a class="brand" id="homeBrand" href="#" aria-label="CISA home">
+      <span class="mark">CI</span>
+      <span>
+        <b>CIS<span style="color:var(--cyan)">A</span></b>
+        <small>ISACA · STUDY PLATFORM</small>
+      </span>
+    </a>
+    <span class="spacer"></span>
+    <span class="pagetag" id="pageTag">DASHBOARD</span>
+  </header>
+
+  <!-- ===== Dashboard (hero + onboarding + card grid) ===== -->
+  <div id="dashboard">
+
+    <section class="hero">
+      <h1>Train for the <span>CISA</span>.<br />Walk in exam-ready.</h1>
+      <p class="lede">
+        A comprehensive, self-paced, open-source training ground for the ISACA
+        <b>CISA</b> certification. In-depth coverage of all five exam domains, 500 Rapid Recall
+        flashcards on a spaced-repetition scheduler, a 500-question bank, audit-decision
+        simulators plus a drag-and-drop Technical Taxonomy Mapping engine, 20 hands-on sandbox
+        labs, a full-length timed mock exam, and an Industry Certification Explorer.
+      </p>
+      <!-- Exam figures are populated by app.js from CISA.exam (single source of truth). -->
+      <p class="examline" id="examline"></p>
+    </section>
+
+    <div class="attrib"><span class="dot"></span> Authored &amp; designed by Professor Rizwan Virani</div>
+
+    <!-- Onboarding card: what it is, what it is not, how to use -->
+    <section class="howto">
+      <h2>How to use this platform</h2>
+      <ol>
+        <li><b>Read the Exam Mechanics &amp; Career Guidance cards first.</b> Understand the high-stakes landscape: the fixed-form 150-question format, the 200&ndash;800 scoring scale, the independent "IS auditor" mindset, and where CISA sits in an audit, assurance, and IT-governance career.</li>
+        <li><b>Deep-dive the five Domain Study cards.</b> Each opens a rigorous, scenario-driven reading interface that mirrors a comprehensive prep manual, from the information systems auditing process to the protection of information assets.</li>
+        <li><b>Lock in the terms with Rapid Recall Flashcards.</b> 100 cards per domain plus a Master Acronym Drill, powered by spaced repetition &mdash; grade each card honestly and the scheduler resurfaces what you're forgetting and retires what you know.</li>
+        <li><b>Validate your knowledge with the Domain Quizzes.</b> Ten focused questions per domain, drawn at random and graded with full rationale.</li>
+        <li><b>Train practical judgment in the PBQ Simulators.</b> 30 interactive performance-based questions across risk-based audit planning, IT governance and controls, acquisition and implementation, operations and business resilience, and protection of information assets, plus a drag-and-drop technical taxonomy mapping engine that has you sort real-world scenarios into the correct categories.</li>
+        <li><b>Benchmark readiness with the full-length, timed Mock Exam.</b> 150 questions weighted exactly to the official domain percentages, with a countdown timer and a scoring dashboard.</li>
+        <li><b>Get hands-on in the Labs.</b> Twenty interactive sandbox labs spanning every exam domain &mdash; flip each card to review its objectives, then launch a full-screen console with live audit-workpaper walkthroughs, configuration panels, and a SYS_ADMIN log.</li>
+        <li><b>Plan your path in the Supplemental Learning Hub.</b> Open the Industry Certification Explorer to compare 39 industry certifications across 12 vendors, with costs, exam blueprints, DoD 8140 mapping, and salary and role insights.</li>
+      </ol>
+      <p class="howto-notice" style="margin-top:18px;padding:13px 16px;border:1px solid var(--line);border-left:3px solid var(--amber);border-radius:0 10px 10px 0;background:rgba(255,180,84,.06);color:var(--ink-dim);font-size:17.5px;line-height:1.6;"><b style="color:var(--amber)">Notice:</b> This platform is optimized for desktop or laptop computers running the Google Chrome browser. Interactive elements, including the hands-on labs, terminal simulations, and drag-and-drop activities, require a mouse and keyboard to function correctly. These features may not display or operate properly on mobile devices.</p>
+
+      <div class="isnot">
+        <div class="col is">
+          <h4>What this is</h4>
+          <ul>
+            <li>An academic preparation resource that tests your knowledge <em>dynamically</em> with original, randomized questions and hands-on simulators.</li>
+            <li>A comprehensive study portal covering every objective in the official ISACA CISA exam content outline.</li>
+            <li>Free, open-source, and self-paced. Everything saves to your browser &mdash; come back where you left off.</li>
+          </ul>
+        </div>
+        <div class="col isnot-col">
+          <h4>What this is not</h4>
+          <ul>
+            <li>Not a source of actual or copyrighted ISACA exam questions, "brain dumps," or leaked items. Using real exam content violates the ISACA Candidate Agreement and Code of Professional Ethics.</li>
+            <li>Not an official ISACA product and not affiliated with or endorsed by ISACA.</li>
+            <li>Not a guarantee of a passing score. It is a practice tool &mdash; the exam tests judgment, not memorization.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card grids are rendered by app.js so all counts stay in sync with the data. -->
+    <div id="cards"></div>
+
+  </div>
+
+  <!-- ===== Workspace (swapped in when a card is opened) ===== -->
+  <div id="view" hidden></div>
+
+  <footer class="foot-credit">
+    <b style="color:var(--ink-dim)">CISA</b> &middot; An open-source ISACA CISA preparation platform.
+    Designed and authored by Professor Rizwan Virani.<br /><br />
+    This is my personal website and an independent educational resource. All views, content, and materials here are entirely my own. They do not represent the views, positions, endorsements, or policies of my employer or of any other person, organization, or institution.<br /><br />
+    Not affiliated with, endorsed by, or sponsored by ISACA. "ISACA" and "CISA" (Certified Information Systems Auditor) are trademarks or registered trademarks of the Information Systems Audit and Control Association (ISACA),
+    and are used here only to identify the exam this resource helps you prepare for. All practice questions are original. Released for academic use.<br /><br />
+    This site was designed and engineered with development assistance from Anthropic's large language model.
+      <div class="legal-notice" style="margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;line-height:1.7;color:var(--ink-dim)">
+      This work is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer" style="color:var(--cyan)">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br />
+      &copy; 2026 Rizwan Virani. Some rights reserved.
+    </div>
+  </footer>
+</div>
+
+<!-- Data first, then the engine, then the app/router/theme manager.
+     The ?v= version marker busts stale browser caches when content is updated;
+     bump it whenever the JS bundles or content modules change. app.js applies
+     the same marker to the lazy-loaded domain and flashcard modules. -->
+<script>window.CISA_VER = "2";</script>
+<script src="assets/js/contentData.js?v=2"></script>
+<script src="assets/js/content/quiz1.js?v=2"></script>
+<script src="assets/js/content/quiz2.js?v=2"></script>
+<script src="assets/js/content/quiz3.js?v=2"></script>
+<script src="assets/js/content/quiz4.js?v=2"></script>
+<script src="assets/js/content/quiz5.js?v=2"></script>
+<script src="assets/js/content/pbqs.js?v=2"></script>
+<script src="assets/js/quizEngine.js?v=2"></script>
+<script src="assets/js/flashEngine.js?v=2"></script>
+<script src="assets/js/app.js?v=2"></script>
+<script src="assets/js/backToTop.js?v=2"></script>
+<script src="assets/js/progressSync.js?v=2"></script>
+</body>
+</html>

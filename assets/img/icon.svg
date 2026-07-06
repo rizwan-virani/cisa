@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="CISA">
+  <rect width="512" height="512" rx="104" fill="#0b1016"/>
+  <rect x="74" y="74" width="364" height="364" rx="80" fill="#34d5e6"/>
+  <text x="256" y="256" dy=".34em" font-family="'Chakra Petch','Segoe UI',sans-serif" font-size="104" font-weight="700" letter-spacing="1" text-anchor="middle" fill="#06121a">CISA</text>
+</svg>
